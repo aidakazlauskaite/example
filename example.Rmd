@@ -5,7 +5,11 @@ date: "2023-11-26"
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+library(terra)
+library(here)
+jan<-terra::rast(here("C:/Documents/MSc Social and Geograhic Data Science/CASA0005 Geographical Information Systems and Science/GIS/wk3/prac3/prac3_data", "wc2.1_5m_tavg_01.tif"))
+# have a look at the raster layer jan
+plot(jan)
 ```
 
 ## R Markdown
